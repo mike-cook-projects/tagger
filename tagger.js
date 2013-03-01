@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////
-// TAGGER											     								//
-// Author: Mike Cook								     								//
-// Date: 06/11/12									     								//
+// TAGGER										//
+// Author: Mike Cook								     	//
+// Date: 06/11/12									//
 // Description: A plugin to allow tag creation and viewing with a depth-of-field effect	//
 //////////////////////////////////////////////////////////////////////////////////////////
 var Tagger = {
@@ -245,7 +245,7 @@ var Tagger = {
 	
 			// Set the class name, including the margin on every 3rd element
 			thumbnail.className = ((i + 1) % 3 === 0) ? "plugin_tagger_item_last plugin_tagger_item"
-													  : "plugin_tagger_item";
+								  : "plugin_tagger_item";
 
 			// Add the thumbnail to the document
 			$(Tagger.thumbnailContainer).append(thumbnail);
@@ -550,7 +550,7 @@ var Tagger = {
 		
 		// Calculate the reduction to fit the thumbnail (depending on whether we are scaling by width or height)
 		var reduction =  scale_by_width ? thumbnail_width / p_selection.width
-										: thumbnail_height / p_selection.height;
+				                : thumbnail_height / p_selection.height;
 		
 		// Determine the new width
 		var new_width = Tagger.containerDimensions.width * reduction;
@@ -561,11 +561,11 @@ var Tagger = {
 		// Calculate the new background position, centering on the scaled selection
 		var background_position = {
 			x: (p_selection.x * reduction) + ((p_selection.width * reduction) > thumbnail_width ? 
-											  ((p_selection.width * reduction) - thumbnail_width) / 2 :
-											 0),
+			   ((p_selection.width * reduction) - thumbnail_width) / 2 :
+			   0),
 			y: (p_selection.y * reduction) + ((p_selection.height * reduction) > thumbnail_height ? 
-											  ((p_selection.height * reduction) - thumbnail_height) / 2 :
-											 0)							 
+			   ((p_selection.height * reduction) - thumbnail_height) / 2 :
+			   0)							 
 		};
 		
 		// Set the background size
