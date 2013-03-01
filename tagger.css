@@ -1,0 +1,84 @@
+/* Tagger Styles */
+div.plugin_tagger_base {
+  position: relative;
+}
+  
+div.plugin_tagger_displace {
+	position: absolute;
+	background-repeat: no-repeat;
+	top: 0px;
+	left: 0px;
+	opacity: 0.2;
+	filter: alpha(opacity = 20);
+	z-index: 0;
+}
+
+div.plugin_tagger_image {
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 1;
+
+	-webkit-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
+	-o-transition: opacity 0.4s ease-in-out;
+	-ms-transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
+}
+
+div.plugin_tagger_draw {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+
+div.plugin_tagger_tag_form {
+	display: none;
+	position: absolute;
+	z-index: 3;
+}
+
+div.plugin_tagger_rectangle {
+	display: none;
+	position: absolute;
+	border: solid 1px #EEEEEE;
+	background-repeat: no-repeat;
+
+	-webkit-box-shadow: 0px 0px 6px #666666;
+	-moz-box-shadow: 0px 0px 6px #666666;
+	box-shadow: 0px 0px 6px #666666;
+}
+
+div.plugin_tagger_thumbnails {
+	position: absolute;
+	width: 400px;
+	min-height: 115px;
+	left: 0px;
+	margin: 8px 0 0 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+span.plugin_tagger_item {
+	display: inline-block;
+	margin-bottom: 5px;
+	margin-right: 5px;
+	width: 85px;
+	height: 80px;
+	color: #345678;
+}
+
+span.plugin_tagger_item_last {
+	margin-right: 0px !important;
+}
+
+.plugin_tagger_crosshair {
+	cursor: crosshair;
+}
+
+div.plugin_tagger_tag_form {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #333333;
+}
