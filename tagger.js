@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////
-// TAGGER  										     								                                      //
-// Author: Mike Cook								     								                                //
-// Date: 06/11/12									     								                                 //
+// TAGGER  										     								    //
+// Author: Mike Cook								     								//
+// Date: 06/11/12									     								//
 // Description: A plugin to allow tag creation and viewing with a depth-of-field effect	//
 //////////////////////////////////////////////////////////////////////////////////////////
 var Tagger = {
@@ -21,7 +21,7 @@ var Tagger = {
 	},
 	
 	//////////////////////////////////////////////////////////////////////////////////////
-	// TAGGER PROPERTIES																                                //
+	// TAGGER PROPERTIES																//
 	//////////////////////////////////////////////////////////////////////////////////////
 	
 	// The element containing the tagger
@@ -51,7 +51,7 @@ var Tagger = {
 	originalLocation: null,
 
 	//////////////////////////////////////////////////////////////////////////////////////
-	// TAGGER SETUP																		                                  //
+	// TAGGER SETUP																		//
 	//////////////////////////////////////////////////////////////////////////////////////
 
 	//// Initialization
@@ -132,7 +132,7 @@ var Tagger = {
 	recalculateHeight: function(p_snap) {
 		// Calculate the estimated vertical size of the image after the scaling
 		var scaled_height = parseInt((Tagger.containerDimensions.width / p_snap.imageDimensions.width) * 
-                                 p_snap.imageDimensions.height);
+                                     p_snap.imageDimensions.height);
 									 
 		// Update the container dimensions property
 		Tagger.containerDimensions.height = scaled_height;
@@ -273,7 +273,7 @@ var Tagger = {
 	},
 	
 	//////////////////////////////////////////////////////////////////////////////////////
-	// TAGGER DRAWING EVENTS															                              //
+	// TAGGER DRAWING EVENTS														    //
 	//////////////////////////////////////////////////////////////////////////////////////
 	
 	//// Preps the draw layer to begin drawing
@@ -407,7 +407,7 @@ var Tagger = {
 	},
 	
 	//////////////////////////////////////////////////////////////////////////////////////
-	// TAGGER DOM EVENTS																                                //
+	// TAGGER DOM EVENTS																//
 	//////////////////////////////////////////////////////////////////////////////////////
 	
 	//// Mousedown event for the draw layer
@@ -451,7 +451,7 @@ var Tagger = {
 	},
 	
 	//////////////////////////////////////////////////////////////////////////////////////
-	// TAGGER THUMBNAIL DOM EVENTS														                          //
+	// TAGGER THUMBNAIL DOM EVENTS													    //
 	//////////////////////////////////////////////////////////////////////////////////////
 	
 	//// Mouseover event for the thumbnail item
@@ -501,7 +501,7 @@ var Tagger = {
 	},
 	
 	//////////////////////////////////////////////////////////////////////////////////////
-	// TAGGER UTILITY FUNCTIONS															                            //
+	// TAGGER UTILITY FUNCTIONS															//
 	//////////////////////////////////////////////////////////////////////////////////////
 	
 	//// Gets a cursor's x, y offset relative to an element
@@ -583,6 +583,6 @@ var Tagger = {
 
 // OnReady Function (Example)
 $(document).ready(function() {
-  // Init the tagger on a fixed element
-  Tagger.init($("#tagger_widget")[0], $("#tagger_tags")[0], true);
+	// Init the tagger on a fixed element
+	Tagger.init($("#tagger_widget")[0], $("#tagger_tags")[0], true);
 });
